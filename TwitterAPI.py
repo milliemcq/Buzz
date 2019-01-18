@@ -1,3 +1,4 @@
+import tweepy
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
@@ -48,8 +49,14 @@ if __name__ == '__main__':
     auth = OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
     stream = Stream(auth, l)
+    while True:
+        # This line filter Twitter Streams
+        try:
+            stream.filter(track=master_list)
+        except:
+            print("Stream Broken")
+            continue
 
-    # This line filter Twitter Streams
-    stream.filter(track=master_list)
+
 
 f.close()
