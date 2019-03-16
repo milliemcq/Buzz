@@ -2,7 +2,7 @@ import tweepy
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
-import mysql.connector
+#import mysql.connector
 
 # Variables that contains the user credentials to access Twitter API
 access_token = "360807471-H7imTvf6vXmcT6tDMUT4ps5viUjESmUjYFtX2JTV"
