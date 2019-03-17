@@ -23,3 +23,4 @@ data_list = json.load(open('Buzz_Data_Final.txt'), cls=ConcatJSONDecoder)
 
 
 for item in data_list:
+ print(item['created_at'])
