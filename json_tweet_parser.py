@@ -23,4 +23,13 @@ data_list = json.load(open('Buzz_Data_Final.txt'), cls=ConcatJSONDecoder)
 
 
 for item in data_list:
+ print("CREATED AT")
  print(item['created_at'])
+ print()
+ print("TEXT")
+ print(item['text'])
+ print()
+ print(item['place'])
+ print()
+ print("USERT")
+ print(item['user'])
