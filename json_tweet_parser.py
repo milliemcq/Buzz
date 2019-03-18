@@ -33,3 +33,6 @@ for item in data_list:
  print()
  print("USERT")
  print(item['user'])
+ print()
+ print("ENTITIES")
+ print(item["entities"])
