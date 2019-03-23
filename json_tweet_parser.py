@@ -1,5 +1,8 @@
 import json
 import re
+from pymongo import MongoClient
+
+client = MongoClient()
 
 #shameless copy paste from json/decoder.py
 FLAGS = re.VERBOSE | re.MULTILINE | re.DOTALL
