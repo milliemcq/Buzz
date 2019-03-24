@@ -2,6 +2,10 @@ import json
 import re
 from pymongo import MongoClient
 
+
+#NEED TO CREATE database here
+MONGO_HOST= 'mongodb://localhost/musicaltweetdb'
+
 client = MongoClient()
 
 #shameless copy paste from json/decoder.py
