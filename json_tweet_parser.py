@@ -29,6 +29,8 @@ class ConcatJSONDecoder(json.JSONDecoder):
 data_list = json.load(open('Buzz_Data_Final.txt'), cls=ConcatJSONDecoder)
 
 
+
+info_list = []
 for item in data_list:
  print("CREATED AT")
  print(item['created_at'])
